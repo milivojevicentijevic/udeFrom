@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.11,.55,.89,.61);
+    transition-delay: 0; */
+    transition: width 2s ease-in, height 1s linear;
+}
+
+div:hover {
+    width: 300px;
+}
+div:active {
+    height: 300px;
+}
