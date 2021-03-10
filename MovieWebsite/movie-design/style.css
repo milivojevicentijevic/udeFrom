@@ -57,7 +57,7 @@ header .logo {
     flex: 1;
 }
 header .logo a {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     color: var(--green);
     font-family: var(--logoFont);
     font-weight: 700;
@@ -74,7 +74,7 @@ header ul li {
 }
 header ul li a {
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 header ul li a.active {
@@ -94,14 +94,14 @@ header .user img {
 }
 header .profile {
     padding: 0 20px;
+    font-size: 1.2rem;
 }
 header .profile span{
     letter-spacing: 2px;
-    font-size: 1.1rem;
 }
 header .toggle {
-    width: 40px;
-    height: 20px;
+    width: 44px;
+    height: 22px;
     background-color: var(--white);
     border-radius: 30px;
     display: flex;
@@ -113,8 +113,8 @@ header .toggle i {
     color: var(--golden);
 }
 header .toggle .ball {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     background-color: var(--dark);
     position: absolute;
     right: 1px;
@@ -137,7 +137,7 @@ aside {
 }
 aside i {
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-bottom: 60px;
 }
 /****************
