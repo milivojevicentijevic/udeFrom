@@ -4,8 +4,10 @@
     --logoFont: 'Sen', sans-serif;
     --fontSize: 16px;
     --dark: #111;
+    --lessDark: #151515;
     --white: #fafafa;
-    --green: #8dd247;
+    --lightgray: #ddd;
+    --green: #4dbf00;
     --golden: #daa520;
 }
 /****************
@@ -27,17 +29,29 @@ a {
 ul {
     list-style: none;
 }
+button {
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 /****************
 header
 ****************/
 header {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: var(--dark);
     display: flex;
     align-items: center;
     color: var(--white);
-    padding: 0 50px;
+    padding: 0 60px;
 }
 header .logo {
     flex: 1;
@@ -73,11 +87,10 @@ header .user {
     justify-content: flex-end;
 }
 header .user img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 50%;
-    padding-top: 2px;
 }
 header .profile {
     padding: 0 20px;
@@ -112,7 +125,7 @@ header .toggle .ball {
 aside
 ****************/
 aside {
-    width: 50px;
+    width: 60px;
     height: 100vh;
     background-color: var(--dark);
     position: fixed;
@@ -120,10 +133,44 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 aside i {
     color: var(--white);
     font-size: 1.3rem;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+}
+/****************
+main
+****************/
+main {
+    background-color: var(--lessDark);
+    height: calc(100vh - 50px);
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-left: 50px;
+}
+.featured {
+    height: 60vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--lessDark)), url(img/f-1.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+.featured div {
+    max-width: 50%;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured div img {
+    width: 250px;
+    opacity: .8;
+}
+.featured div p {
+    padding: 40px 0;
+    color: var(--lightgray);    
+}
+.featured button {
+    margin-right: auto;
 }
